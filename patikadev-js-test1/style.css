@@ -1,0 +1,72 @@
+:root {
+    --black: #000000;
+    --dark: #272727;
+    --green: #C4FE76;
+    --white: #FFFFFF;
+  }
+
+*{
+    color: var(--white);
+    font-family: 'Poppins';
+}
+
+.bg-text{
+    user-select: none;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    color: var(--green);
+    opacity: 7%;
+    position: relative;
+}
+.absolute{
+    position: absolute;
+    z-index: 5;
+   font-size: 28px;
+}
+
+.person-name{
+    color:var(--white);
+}
+#person{
+    color: var(--green);
+}
+#day-name{
+    color: var(--green);
+    text-transform: uppercase;
+}
+.clock-container{
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+.clock-part{
+    font-size: 22px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    margin:0rem 0.3rem;
+    width: 70px;
+    padding: 1rem;
+    border-bottom: 2px solid var(--green);
+    color: var(--white);
+    background-color: var(--dark);
+}
+body{
+    padding: 0;
+    margin: 0;
+    background-color: var(--black);
+}
+.main{
+    box-sizing: border-box;
+    height: fit-content;
+    min-height: 100vh;
+    width: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+}
